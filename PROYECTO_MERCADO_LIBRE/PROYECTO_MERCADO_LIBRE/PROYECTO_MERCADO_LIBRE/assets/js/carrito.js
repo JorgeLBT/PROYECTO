@@ -79,15 +79,3 @@ function eliminarProducto(index) {
 
 // Llama a mostrarCarrito al cargar la página
 window.onload = mostrarCarrito;
-
-
-// JavaScript para controlar la visualización del carrito
-const cartIcon = document.getElementById('cart-icon');
-const carritoContainer = document.getElementById('carrito-container');
-
-// Agrega un evento de clic al ícono del carrito para mostrar/ocultar el carrito
-cartIcon.addEventListener('click', function() {
-    carritoContainer.classList.toggle('visible');
-});
-
-//---------------------------------
