@@ -1,0 +1,130 @@
+body {
+    background-color:#ffe600;
+}
+.container {
+    margin-top: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.total {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.colorcarrito {
+    background-color:#ffe600;
+    padding: 20px;
+  }
+
+  
+  /* Estilos para ocultar y mostrar el carrito */
+  .carrito-container {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color:#ffe600;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.carrito-container.visible {
+    display: block; /* Mostrar carrito */
+}
+
+/* Estilo para el botón de cerrar */
+.carrito-container .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ff6b6b;
+}
+
+/* Estilo para la tabla del carrito */
+.carrito-container h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Animación del carrito */
+.carrito-container {
+    transform: translateX(100%); /* Inicialmente oculto fuera de la pantalla */
+}
+
+.carrito-container.visible {
+    transform: translateX(0); /* Carrito visible */
+}
+
+/* Mejora visual de los botones de cantidad */
+button {
+    background-color: #4CAF50;
+    background-color:#ffe600;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/*---------------------------------------------------------------------------------------*/
+    /* Estilos para la tabla */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* Quita los espacios entre bordes */
+    }
+
+    /* Color del encabezado */
+    thead {
+        background-color: #4CAF50; /* Color de fondo del encabezado */
+        color: white; /* Color del texto del encabezado */
+    }
+
+    /* Color de las filas */
+    tbody tr {
+        background-color:#ffe600;
+        /* Color de fondo de las filas impares */
+    }
+
+    tbody tr:nth-child(even) {
+        background-color:#ffe600;
+        /* Color de fondo de las filas pares */
+    }
+
+    /* Bordes de la tabla */
+    th, td {
+        border: 1px solid #ddd; /* Color del borde de las celdas */
+        padding: 8px; /* Espaciado dentro de las celdas */
+        text-align: center; /* Centrar el contenido de las celdas */
+    }
+
+    /* Cambiar color al pasar el ratón por encima de una fila */
+    tbody tr:hover {
+        background-color:#ffe600;
+        /* Color de fondo al pasar el ratón */
+    }
+
+    /* Opcional: Cambiar el estilo de la tabla para ser más moderna */
+    table {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
